@@ -26,7 +26,7 @@ def write_yaml_file(file_path: str, content: object, replace: bool = False) -> N
             yaml.dump(content, file)
     except Exception as e:
         raise NetworkSecurityException(e, sys)
-'''    
+
 def save_numpy_array_data(file_path: str, array: np.array):
     """
     Save numpy array data to file
@@ -74,7 +74,7 @@ def load_numpy_array_data(file_path: str) -> np.array:
         raise NetworkSecurityException(e, sys) from e
     
 
-
+'''
 def evaluate_models(X_train, y_train,X_test,y_test,models,param):
     try:
         report = {}
